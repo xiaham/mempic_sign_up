@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+.half_area{
+	max-width: 100%;
+	max-height:100%;
+	min-height: 100vh;
+	display: flex;
+    flex-direction: row;
+}
+.left_area{
+    max-width: 50%;
+    max-height:100%;
+    min-height: 100vh;
+    background: url(../Resource/bg_01.png) no-repeat center center;
+   	width: 10000px;
+}
+.right_area{
+	max-width: 50%;
+	max-height:100%;
+	min-height: 100vh;
+	width: 10000px;
+	background-color: white;
+	margin: 0 auto;
+}
+table {
+    line-height: 25px;
+}
+.left_area > img {
+    max-width:100%;
+    max-height:100%;
+    display:inline-block;
+    vertical-align:middle;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+
+.tbl_wp {
+	border-top: 0px solid #D0D0D0;
+    width: 100%;
+}
+.lyt_login_wp {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15%;
+ 
+}
+.tbl_wp td.ttl_stl{
+    width: 20%;
+    text-align: left;
+    border-right: 0px solid #d0d0d0;
+    font-weight: bold;
+}
+.tbl_wp td.con_stl {
+    width: 64%;
+    text-align: left;
+}
+.sign_up_button{
+    display: inline-block;
+    text-align: center !important;
+    background-color: #d8344a;
+    border: 0;
+    font-size: 17px;
+    padding: 17px 0;
+    width: 100%;
+    color: white;
+    display: inline-block;
+    margin-top: 120px;
+    border-radius: 6px;
+}	
+.lyt_login_wp img.join_logo{
+    width: 190px;
+    margin-bottom: 60px;
+}
+.tbl_wp td.ttl_stl {
+    width: 20%;
+    text-align: left;
+    border-right: 0px solid #d0d0d0;
+    font-weight: 400;
+    color: #6F6F6F;
+    font-size: 14px;
+}
+.tbl_wp td {
+    padding: 10px;
+    border-bottom: 1px solid #D0D0D0;
+    white-space: nowrap;
+}
+
+input[type="text"]{
+    padding:12px 10px;
+    border: 0px solid #E1E1E1;
+    margin:5px 0;
+    font-size: 14px;
+    width:100%;
+}
+input[type="password"]{
+    padding:12px 10px;
+    border: 0px solid #E1E1E1;
+    margin:5px 0;
+    font-size: 14px;
+    width:100%;
+}
+input[type="email"]{
+    padding:12px 10px;
+    border: 0px solid #E1E1E1;
+    margin:5px 0;
+    font-size: 14px;
+    width:100%;
+}

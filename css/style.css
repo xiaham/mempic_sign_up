@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/*ResetStyles
+***********************/
+
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/* @import url(monitor.css); */
+@import url(mobile.css?p=1);
+
+/* reset */
+
+* {
+    outline: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+    /*border-top: 3px solid #FE0019*/
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {
+    margin: 0;
+    padding: 0
+}
+fieldset,img {
+    border: 0 none
+}
+dl,ul,ol,menu,li {
+    list-style: none
+}
+blockquote,q {
+    quotes: none
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: '';
+    content: none
+}
+input,select,textarea,button {
+    vertical-align: middle
+}
+button,a {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    outline-style: none
+}
+body {
+    background: #fff
+}
+body,th,td,input,select,textarea,button {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #333
+}
+a {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer
+}
+a:active,a:hover {
+    text-decoration: underline
+}
+address,caption,cite,code,dfn,em,var {
+    font-style: normal;
+    font-weight: normal
+}
+legend {
+    visibility: hidden;
+    position: absolute
+}
+select {
+    outline-style: none
+}
+button,a,input,textarea {
+    outline-style: none
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0
+}
+/* select arrow hidden */
+select::-ms-expand {
+    display: none !important
+}
+/* IE select arrow hidden */
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.hidden {
+    display: none !important;
+}
+.message-dialog-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+#send-waiting.message-dialog {
+    padding:24px 36px 24px 24px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    background-color:#fff;
+    border:1px solid rgba(0,0,0,0.25);
+    border-radius:6px;
+    box-shadow: 0 0 12px #fff;
+    -moz-box-shadow: 0 0 12px #fff;
+    -webkit-box-shadow: 0 0 12px #fff;
+    -webkit-overflow-scrolling:touch;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#waiting-message {
+    padding-left:16px;
+    text-align:left;
+    font-size:12px;
+}
+#postcode-find-wrapper {
+    display: none;
+    width: 92%;
+    height: 245px;
+    margin-bottom: 10px;
+    border: 1px solid #E1E1E1;
+    position: relative;
+}
+#postcode-close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    z-index: 1
+}
+.menu_on {
+    color: #FE0019 /* ��몿而� */
+}
+.txt_clr01{
+    color: white
+}
+.txt_clr02{
+    color: #b7b7b7 /* 占쎌돳占쎄퉳 */
+}
+.txt_clr03{
+    color: #DE424F /* ��몿而� */
+}
+.txt_clr04{
+    color: #31A4DB /* 占쎈솁占쎌삂 */
+}
+.txt_clr05{
+    color: #17a1e1 /* 筌욊쑵釉놂옙�놅옙�� */
+}
+.main_4bns_clr01 {
+    background-color: #FF7F44 /* 雅뚯눛�댐옙源� */
+}
+.main_4bns_clr02 {
+    background-color: #c261d8 /* 癰귣��わ옙源� */
+}
+.main_4bns_clr03 {
+    background-color: #44C4FF /* 占쎈릭占쎈뮎占쎄퉳 */
+}
+.main_4bns_clr04 {
+    background-color: #F3DD31 /* 占쎈걗占쎌삂占쎄퉳 */
+}
+.clr01 {
+    background-color: #FF7F44 /* 雅뚯눛�댐옙源� */
+}
+.clr02 {
+    background-color: #c261d8 /* 癰귣��わ옙源� */
+}
+.clr03 {
+    background-color: #44C4FF /* 占쎈릭占쎈뮎占쎄퉳 */
+}
+.clr04 {
+    background-color: #F3DD31 /* 占쎈걗占쎌삂占쎄퉳 */
+}
+.clr05 {
+    background-color: #f8f8f8 /* 獄쏆빘占쏙옙�띰옙源� */
+}
+.clr06 {
+    background-color: #d3d3d3 /* 占쎈쐭占쎌겲占쏙옙占쎌돳占쎄퉳 */
+}
+.clr07 {
+    background-color: #707070 /* 餓λ쵌而숋옙�띰옙源� */
+}
+.clr08 {
+    background-color: #C6C6C6 /* 占쎌겲占쏙옙占쎌돳占쎄퉳 */
+}
+.clr09 {
+    background-color: #DE424F /* ��몿而숋옙源� */
+}
+.clr10 {
+    background-color: #ffffff /* 占쎌뵛占쎄퉳 */
+}
+.clr11 {
+    background-color: #FB7025 /* 雅뚯눛�댐옙源�2 */
+}
+.clr12 {
+    background-color: #CFF563 /* 占쎈염占쎈あ占쎄퉳 */
+}
+.clr13 {
+    background-color: #E74050 /* ��몿而�2 */
+}
+.clr14 {
+    background-color: #F7855A /* 雅뚯눛�� */
+}
+.clr15 {
+    background-color: #F4DC4E /* 占쎈걗占쎌삂 */
+}
+.clr16 {
+    background-color: #54C5F8 /* 占쎈솁占쎌삂 */
+}
+.clr17 {
+    background-color: #333 /* 筌욎늿占쏙옙�띰옙源� */
+}
+
+
+
+.al_txt_l{text-align: left !important;}
+.al_txt_c{text-align: center !important}
+.al_txt_r{text-align: right !important}
+p.al_txt_l p{text-align: left !important}
+
+.dp_ib{display: inline-block}
+.dp_in{display: inline}
+.dp_bk{display: block}
+
+.ws_no{white-space: normal !important}
+.ws_nw{white-space: nowrap !important}
+
+.box_yell{background-color: #F9F6DF}
+.box_grn{background-color: #DCF8D9}
+.box_gray{background-color: #F8F8F8}
+.box_red{background-color: #F8DFDF}
+.box_yell{background-color: #F9F6DF}
+.box_white{background-color: #fff}
+
+h1,h2,h3,h4,h5,h6{ float: left; width:100%; box-sizing: border-box;}
+.dis_none{display: none;}
+
+.ellip {
+  display: block;
+  height: 100%;
+}
+
+.ellip-line { display: inline-block; text-overflow: ellipsis; white-space: nowrap; word-wrap: normal; max-width: 100%;}
+
+.ellip,
+.ellip-line { position: relative; overflow: hidden;}
+
+.saju_tab{display: none;}
+.saju_tab.block{display: block;}
+.year_tab{display: none;}
+.year_tab.block{display: block;}
+
+.saju_tab .title_col{color: #64B5F6; margin: 20px; box-sizing: border-box;}
+.saju_tab .sum_col{color: #A5A5A5; line-height: 27px; margin: 20px;}
+.saju_tab .des_col{color: #333; line-height: 27px; margin: 20px;}
+.saju_tab .num_point{color: #FF819C; font-size: 27px; width: 100%; float:left; display: block; margin: 20px;}
+.fortune_calendar_list_title{display:block; float:right; margin: 2px 6px;  background-color: #FB8C00; padding: 5px; border-radius: 10%; font-size: 12px; color: white}
+
+.fortune_card{width: auto; float:left; text-align: center; margin: 10px;}
+.fortune_card .card_top, .fortune_card .card_middle, .fortune_card .card_bottom{width:100%; float:left;}
+.fortune_card .card_top{padding: 20px; background-color: #FFF3E0;}
+.fortune_card .card_middle{padding: 20px; background-color: #FFE0B2;}
+.fortune_card .card_bottom{padding: 20px; background-color: #FFCC80;}
+
+.saju_main .saju_box {width:45%; height:auto; min-height:160px; float:left; margin: 2%; box-shadow: 0px 0px rgba(0,0,0,0.0), 0 2px 24px rgba(0,0,0,0.06); padding: 20px; box-sizing: border-box;}
+.saju_main .saju_box .left {float: left; width: 30%; overflow: hidden;}
+.saju_main .saju_box .left img{float: left; width: 100%;}
+.saju_main .saju_box .right {float: right; width: 70%; padding: 20px; box-sizing: border-box;}
+.saju_main .saju_box .right .title{width: 100%; height: 50%; line-height: 50px; font-weight: bold;}
+.saju_main .saju_box .right .content {width: 100%; height: 50%; font-size: 12px;}
+
+.width_100{width:100%; float: left;}
+
+.momtv{position: relative;}
+.momtv .left_box{width: 350px; float: left; padding: 25px; box-sizing: border-box; background-color: #D9D9D7; color: #424242; border-radius: 0 0 10px 10px;}
+.momtv .right_box{width: 750px; float: right; padding: 30px; box-sizing: border-box; font-weight: 600; overflow: hidden; }
+
+.momtv .momtv_chennal_box{padding:12px 0 12px 12px; cursor: pointer; box-sizing: border-box;}
+.momtv .momtv_chennal_box:hover{background-color: rgba(255,255,255,.5); transition: .3s;}
+.momtv .momtv_chennal_box:hover .chennal_img_box{border-color:#fbdc71;}
+
+.momtv .chennal_img_box{position:relative; box-sizing:border-box; height: 48px; width: 48px; float:left; margin-right: 24px; border:4px solid #fff; border-radius: 50%; background-color: transparent; overflow: hidden; }
+.momtv .chennal_img_box img{
+	position:absolute;
+	height:100%;
+	left:50%;
+	transform:translateX(-50%);
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-ms-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+}
+.momtv .chennal_title_box{height: 35px; width: 60%; float: right; line-height: 48px;}
+.momtv .video_img_box_out{height: 185px; border: 1px solid #d0d0d0; margin: 20px 0;}
+.momtv .video_img_box{width:36%; float: left; height: 100%;}
+.momtv .video_img_box img{height: 100%;}
+
+.momtv .video_title_box{width: 55%; padding: 26px; float: left;}
+.momtv .videos_info_box .video_title_box .title{display: inline-block; width: 100%; font-family: NanumGothicBold Regular;  font-weight: 600; margin-bottom: 13px; white-space: nowrap;  overflow: hidden; text-overflow: ellipsis;}
+.momtv .video_title_box .description{font-size:13px; color:rgb(96,96,96);}
+.momtv .video_title_box button{width:102px; height:38px; float: right; font-family: NanumGothicBold Regular; font-size:15px; color:rgb(52,52,52); background-color: #fbdc71; margin-top: 65px; border-radius: 30px;}
+.momtv .video_title_box button:hover{background-color: #e3c869; }
+
+.momtv .video_info_box_in{cursor: pointer;}
+.momtv .video_box{width: 100%; box-sizing: border-box; background-color: #333; float: left; text-align: center; padding: 25px 0;}
+.momtv .youtube_video_box .title{width: 100%; float: left; }
+
+.momtv .videos_info_box{transition: .3s;}
+.momtv .videos_detail_info_box{display:none; margin-left:120%; transition: .3s;}
+.momtv .videos_detail_info_box .fav_icon{vertical-align: middle;}
+.momtv .videos_info_box_detail{width: 250px; float: left; margin-top: 30px; }
+.momtv .videos_info_box_detail .title{ font-size: 12px;}
+.momtv .videos_detail_info_box .video_title_box{width:100%; padding:20px 0 26px 0;}
+.momtv .videos_info_box_detail .video_title_box{ margin-bottom: 10px; padding: 0;}
+.momtv .videos_reply_box_detail{ width: 420px; float: right; margin-top: 30px;}
+.momtv .reply_detail{ box-sizing: border-box; padding: 20px; margin-top: 5px; box-shadow: 0 2px 5px 0 rgba(143, 143, 143, 0.39);}
+.momtv .reply_detail .left{ float: left;}
+.momtv .reply_detail .right{ float: right;}
+.momtv .reply_detail .left{color: rgb(91,102,112); font-size: 15px;}
+.momtv .reply_detail .content{box-sizing: border-box; padding: 20px 0 0 0; color: rgb(91,102,112);}
+.momtv .reply_detail .date{font-size: 12px; color: rgb(151,153,155);}
+.momtv #reply_input{width: 420px; float: right; margin-top: 30px;}
+.momtv .back_btn, .momtalk .back_btn{float:left; padding: 20px; cursor: pointer; font-weight: 600;}
+.momtv .heart{float: right; padding: 20px; cursor: pointer; font-weight: 600;}
+
+.momtv .video_fav_info_box_in .video_img_box_out{height:80px; cursor: pointer; margin:0; margin-top:10px; background-color: rgba(251,220,113,.3);}
+.momtv .video_fav_info_box_in .video_img_box_out img{height:80px;}
+.momtv .video_fav_info_box_in .video_img_box{width:124px; height: 80px; float: left;}
+.momtv .video_fav_info_box_in .title{width:124px; height: 80px; float: right; font-size:13px; color:rgb(96,96,96); padding: 5px; box-sizing: border-box;}
+.momtv .video_fav_info_box_in .video_title_box{width: auto;}
+
+.momtalk{position:relative; box-sizing: border-box; height: auto; }
+.momtalk input, .momtalk textarea{box-sizing: border-box; margin: 5px 0; border: 1px solid #d0d0d0; padding: 12px 10px;}
+
+.momtalk .momtalk_write_box {
+	position: absolute;
+	width: 472px;
+	height: 305px;
+	top: 0;
+	right: 0;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.momtalk .momtalk_write_box h3{margin-bottom: 20px;}
+.momtalk .momtalk_write_box button{margin-top: 20px; background-color: #fbdc71; color: rgb(51,51,51); font-weight: bold; font-size: 15px; }
+.momtalk .momtalk_in{width: 586px; float: left; overflow: hidden; padding: 10px; box-sizing: border-box;}
+.momtalk .momtalk_list{background-color: #fff; padding: 12px; margin: 10px 0; box-sizing: border-box; cursor: pointer; box-shadow: 0 2px 5px 0 rgba(143, 143, 143, 0.39);}
+.momtalk .momtalk_list img{width: 24px; vertical-align: middle; margin-right:5px;}
+.momtalk .left{width: 70%; float: left;}
+.momtalk .right{width: 30%; float: right; text-align: right;}
+.momtalk_list_box{transition: .3s;}
+.momtalk_list .reply_detail{ box-sizing: border-box; padding: 5px; margin-top: 5px;}
+
+.momtalk_list .bottom_info{ padding: 12px 0; box-sizing: border-box; border-top: 1px solid #DFDFDF;}
+.momtalk_list .bottom_info .heart_count_0{margin-right: 11px;}
+.momtalk_list .bottom_info .save_count{margin-right: 4px; margin-left: -4px;}
+.momtalk_list .content{padding: 20px 0;}
+.register_date_0{color: #aaa; font-size: 9px;}
+
+.momtalk .detail_box_in{transition: .3s; margin-left:120%; box-sizing: border-box;}
+.momtalk .detail_box{display: none;}
+.momtalk .detail_box .momtalk_list{width: 100%; float: left;}
+.momtalk .detail_box .momtalk_list.list_first{background-color: rgba(251,220,113,.2);}
+.momtalk .detail_box .bottom_info{ border-top: 1px solid #BDBDBD;}
+
+
+
+
+@media screen and (max-width: 870px){
+	.saju_main .saju_box{width:96%;}
+	.saju_main .saju_box .right .title{font-size: 12px; line-height: 24px;}
+	.saju_main .saju_box .right{padding: 10px;}
+	
+	.saju_tab .title_col{margin: 0; padding: 10px; font-size: 16px;}
+	.saju_tab .sum_col{margin: 0; padding: 10px; font-size: 14px;}
+	.saju_tab .des_col{margin: 0; padding: 10px; font-size: 12px; font-weight: 100;}
+	
+	.fortune_card{width: 31%; margin: 1%;}
+	.fortune_card .card_top, .fortune_card .card_middle, .fortune_card .card_bottom{box-sizing: border-box; padding: 10px 0;}
+	
+	.btn_typ_01 {width: 48%; margin: 1px}
+	
+	#forturnForm{padding:5px; box-sizing: border-box;}
+	
+	.momtalk{width: 100%;}
+	.momtalk .momtalk_in{padding: 0 15px;}
+	
+	.lyt_roll_bn{padding: 0;} 
+	.momtv .momtv_chennal_box_out{width:550px;}
+	.momtv .right_box{width:100%; padding: 0 15px;}
+	.momtv .momtv_chennal_box{width: 65px; padding: 8px;}
+	.momtv .chennal_title_box{width:100%; height: auto; margin-left: -3px; float: left; font-size: 70%; text-align: center;}
+	.momtv .left_box{width:100%; overflow:hidden; overflow-x: auto; height: 100px; padding: 5px; z-index: 1; border-radius: 0;}
+	.momtv .left_box_out{min-height: 100px;}
+	.momtv #reply_input{width:100%;}
+	.momtv .videos_reply_box_detail{width:100%;}
+	.momtv .videos_info_box_detail{width:100%;}
+	.momtv .video_img_box_out ,.momtv .video_img_box{width:100%; height: auto;}
+	.momtv .video_title_box{width:100%; box-sizing: border-box;}
+	.momtv .video_img_box img{width:100%; }
+	
+}
