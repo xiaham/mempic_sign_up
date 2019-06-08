@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>회원가입</title>
+
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/signUp.css">
+    </head>
+    <body>
+        <div class="half_area">
+        	<div class="left_area">
+    
+        			<img src="../Resource/logo.png" class="join_logo">
+ 
+        	</div>
+            <div class="right_area">
+                <div class="lyt_login_wp">
+                    <p>
+                    	<img src="../Resource/sign_up_logo.png" class="join_logo">
+                   	</p>
+ 				    <div class="tbl_wp mg_b30px">
+                            <table>
+             
+                               <tbody>
+                               <tr>
+                                   <td class="ttl_stl">Name</td>
+                                   <td class="con_stl"><input type="text" id="join_user_name"></td>
+                               </tr>
+                               
+								<tr>
+                                   <td class="ttl_stl">Phone</td>
+                                   <td class="con_stl">
+                                   	<input type="text" id="join_user_tel" maxlength="15">
+                                   </td>
+                               </tr>
+                                
+                                <tr>
+                                    <td class="ttl_stl">Password</td>
+                                    <td class="con_stl"><input type="password" id="join_password"> <br><span class="inf hidden">* 영문/숫자/특수문자 포함 8~14자리</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="ttl_stl">PW Confirm</td>
+                                    <td class="con_stl"><input type="password" id="join_password_confirm"></td>
+                                </tr>
+                                
+                                    
+                                <tr>
+                                    <td class="ttl_stl">Email</td>
+                                    <td class="con_stl"><input type="email" id="join_email_address"></td>
+                                </tr>
+                                
+                            </tbody>
+                            </table>
+                    </div>
+                    <button class="sign_up_button" type="button" onclick="processMemberJoin(1);">Sign up</button>
+                </div>
+            </div>
+
+            <div id="lyt_btm_area">
+        
+<div class="message-dialog-wrapper" id="send-waiting-wrapper">
+    <div class="message-dialog" id="send-waiting">
+        <table>
+            <tbody><tr>
+                <td><img alt="" src="/platform/resources/images/ajax-loader.gif"></td>
+                <td id="waiting-message"></td>
+            </tr>
+        </tbody></table>
+    </div>
+</div>
+
+            </div>
+        </div>
+    
+
+</body>
+</html>
